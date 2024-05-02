@@ -1,0 +1,403 @@
+
+body{
+    margin: 0; /*마진을 0으로 해야 틈이 없어짐*/
+    font-family: 'Niramit', sans-serif;
+    padding-top: 55;
+}
+
+/*header bar*/
+.navbar a{
+    text-decoration: none; /*엥커테그에 밑줄 안드게*/
+    color: #776B5D;
+}
+
+.navbar{
+    display: flex; /*박스를 플렉스로*/
+    justify-content: space-between; /*박스간 간격을*/
+    align-items: center; /*기본축을 수직적으로 바꿔주기*/
+    padding: 8px 12px; /*박스에서의 패딩*/
+    width: 100%;
+    height: 55;
+    position: fixed;
+    top : 0; 
+    background-color: #F2EFE5;
+    z-index: 9999;
+    /* background-size: cover; */
+}
+
+.navbar__name{
+    display: flex;
+    position: absolute;
+    left: 70px; 
+    font-size: 24px;
+}
+
+.navbar__menu{
+    display: flex;
+    list-style: none; /*리스트에 점 없애기*/
+}
+
+.navbar__menu li{
+    padding: 8px 20px; /*리스트간 간격 */
+}
+
+.navbar__menu li:hover{
+    background-color:#B3A398; /*리스트에서 선택배경색*/
+    border-radius: 4px;
+}
+
+.navbar__toogleBtn{
+    display: none; /*화면이 작아졌을때만 나오게*/
+    position: absolute;
+    right: 62px;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+/*langind page*/
+h1,p{
+    margin: 0;
+}
+
+#main{
+    background-image:url("/images/sampleimage.jpg");
+    background-size: cover; 
+    background-position: center center; /*가로에서 중앙 세로에서 중앙이란 뜻*/
+    width: 100%;/* web broser전체크기에 맞게끔 지정*/
+    height: 100vh;
+} 
+#contents{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#contents h1{
+    font-family: 'Dancing Script', cursive;
+    font-size : 170px; 
+    margin-bottom: 16px;
+}
+#contents p{
+    font-size : 24px; 
+    margin-bottom: 16px;
+}
+#contents a{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;    
+}
+
+#main a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#contents a:hover{
+    background-color: #B3A398;
+
+}
+
+/*about page*/
+#section{
+    background-color: #FAF6F0;
+    position: relative;
+}
+
+.photo1, .photo3{
+    position: relative; /* 이 요소를 부모 요소를 기준으로 배치하도록 변경 */ 
+    top: 200px;
+    left:40px; 
+    transition: transform 2s; 
+}
+
+#s1 h3, #s3 h3{
+    position: relative;
+    font-size: 3em;
+    left: 900px;
+    top: -190px;
+    width: 550px;
+    font-family: 'Dancing Script', cursive;
+    opacity: 0;
+    transition: opacity 2.5s;
+}
+
+#s1 p, #s3 p{
+    position: relative;
+    left: 900px;
+    top: -150px;
+    width: 500px;
+    opacity: 0;
+    transition: opacity 2.5s;
+}
+
+
+.photo2{
+    position: relative; /* 이 요소를 부모 요소를 기준으로 배치하도록 변경 */ 
+    top: 200px;
+    right: -950px;    
+    transition: transform 2s; 
+}
+
+#s2 h3{
+    position: relative;
+    font-size: 3em;
+    left: 170px;
+    top: -230px;
+    width: 550px;
+    font-family: 'Dancing Script', cursive;
+    opacity: 0;
+    transition: opacity 2.5s;  
+}
+
+#s2 p{
+    position: relative;
+    left: 170px;
+    top: -220px;
+    width: 500px;
+    opacity: 0;
+    transition: opacity 2.5s;
+}
+
+
+#s1 h3.visible{
+    opacity: 1;
+}
+#s1 p.visible{
+    opacity: 1;
+}
+#s2 h3.visible{
+    opacity: 1;
+}
+#s2 p.visible{
+    opacity: 1;
+}
+#s3 h3.visible{
+    opacity: 1;
+}
+#s3 p.visible{
+    opacity: 1;
+}
+
+.photo1.slide{
+    transform: translateX(30%);
+}
+.photo3.slide{
+    transform: translateX(30%); 
+}
+.photo2.slide{
+    transform: translateX(-30%);
+}
+
+/*contact page*/
+#contact {
+    background-color: #F2EFE5;
+    height: 500px;
+}
+
+#contact div{
+    position: relative;
+    left: 250px;
+    top: 130px;
+}
+
+#contact img{
+    position: relative;
+    left: 220px;
+    top: 100px;
+}
+#contact gmp-map {
+    position: relative;
+    height: 300px;
+    width: 700px;
+    left: 700px;
+    top:-100px;
+
+  }
+  
+
+/* menu page */
+.toptext {
+    position : relative; 
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* menu list box */
+.menu_nav a{
+    text-decoration: none; /*엥커테그에 밑줄 안드게*/
+    color: #776B5D;
+}
+
+.menu_nav{
+    display: flex; /*박스를 플렉스로*/
+    justify-content: space-between; /*박스간 간격을*/
+    align-items: center; /*기본축을 수직적으로 바꿔주기*/
+    padding: 8px 12px; /*박스에서의 패딩*/
+    width: 45%;
+    height: 55;
+    position: relative;
+    /* top : 0px;  */
+    left : 400px;
+    background-color: #F2EFE5;
+    z-index: 9999;
+    border-radius: 20px;
+}
+
+.menu_list{
+    display: flex;
+    list-style: none; /*리스트에 점 없애기*/
+}
+
+.menu_list li{
+    padding: 8px 50px; /*리스트간 간격 */
+}
+
+.menu_list li:hover{
+    background-color:#B3A398; /*리스트에서 선택배경색*/
+    border-radius: 4px;
+}
+
+
+/* menu for appetizer  */
+#appetizer{
+    position: relative;
+}
+
+#appetizer h3{
+    position: absolute;
+    top: 130px;
+    left : 620px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+}
+.appePho {
+    position: relative;
+    top:130px;
+    left:60px;    
+}
+
+.appeContainer{
+    position: relative;
+    top: -410px;
+    left: 620px;
+
+}
+.appeContainer{
+    display: grid; 
+    grid-template-columns: repeat(2,400px);
+    row-gap:50px;
+    column-gap: 30px;
+    font-size: 20px;
+}
+
+
+/* menu for noodle */
+#noodle{
+    position: relative;
+}
+#noodle h3{
+    position: absolute;
+    top: -150px;
+    left : 80px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+}
+.noodlePho {
+    position: relative;
+    top: -130px;
+    left:900px;    
+}
+
+.noodleContainer{
+    position: relative;
+    top: -380px;
+    left: 80px;
+
+}
+.noodleContainer{
+    display: grid; 
+    grid-template-columns: repeat(2,350px);
+    row-gap:50px;
+    column-gap: 30px;
+    font-size: 20px;
+}
+
+/* menu for rice */
+#rice{
+    position: relative;
+}
+#rice h3{
+    position: absolute;
+    top: -150px;
+    left : 80px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+}
+.ricePho {
+    position: relative;
+    top: -130px;
+    left:900px;    
+}
+
+.riceContainer{
+    position: relative;
+    top: -380px;
+    left: 80px;
+
+}
+.riceContainer{
+    display: grid; 
+    grid-template-columns: repeat(2,350px);
+    row-gap:50px;
+    column-gap: 30px;
+    font-size: 20px;
+}
+
+
+
+/*화면 작아졌을떄*/
+@media screen and (max-width:768px) { 
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .navbar__menu{
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar__menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar__toogleBtn{
+        display: block;
+    }
+
+    /* for java script */
+    .navbar__menu.active{
+        display: flex;
+    }
+    
+    #contents h1{
+        font-size: 130px;
+    }
+
+    #contents p{
+        font-size: 20px;
+    }
+
+    
+
+}

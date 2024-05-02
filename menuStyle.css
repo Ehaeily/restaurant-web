@@ -1,0 +1,114 @@
+body{
+    margin: 0; /*마진을 0으로 해야 틈이 없어짐*/
+    font-family: 'Niramit', sans-serif;
+    padding: 0;
+}
+
+.toptext {
+    position : relative; 
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+
+/* menu list box */
+.menu_nav a{
+    text-decoration: none; /*엥커테그에 밑줄 안드게*/
+    color: #776B5D;
+}
+
+.menu_nav{
+    display: flex; /*박스를 플렉스로*/
+    justify-content: space-between; /*박스간 간격을*/
+    align-items: center; /*기본축을 수직적으로 바꿔주기*/
+    padding: 8px 12px; /*박스에서의 패딩*/
+    width: 45%;
+    height: 55;
+    position: relative;
+    /* top : 0px;  */
+    left : 400px;
+    background-color: #F2EFE5;
+    z-index: 9999;
+    border-radius: 20px;
+}
+
+.menu_list{
+    display: flex;
+    list-style: none; /*리스트에 점 없애기*/
+}
+
+.menu_list li{
+    padding: 8px 50px; /*리스트간 간격 */
+}
+
+.menu_list li:hover{
+    background-color:#B3A398; /*리스트에서 선택배경색*/
+    border-radius: 4px;
+}
+
+
+
+#section{
+    position: relative;
+}
+
+
+
+/* menu for appetizer  */
+#appetizer h3{
+    position: absolute;
+    top: 370px;
+    left : 620px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.appePho {
+    position: relative;
+    top:130px;
+    left:60px;    
+}
+
+.appeContainer{
+    position: relative;
+    top: -410px;
+    left: 620px;
+
+}
+.appeContainer{
+    display: grid; 
+    grid-template-columns: repeat(2,400px);
+    row-gap:30px;
+    column-gap: 30px;
+    font-size: 20px;
+}
+
+
+
+
+/* menu for noodle */
+/* #nodle h3{
+    position: absolute;
+    top: -350px;
+    left : 650px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.nodlePho {
+    position: relative;
+    top:130px;
+    left:60px;    
+}
+
+.nodleContainer{
+    position: relative;
+    top: -400px;
+    left: 650px;
+
+}
+.nodleContainer{
+    display: grid; 
+    grid-template-columns: repeat(2,350px);
+    row-gap:30px;
+    column-gap: 30px;
+    font-size: 20px;
+} */
